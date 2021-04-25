@@ -1,3 +1,4 @@
+PUT hello_world/_doc/1
 {
     "type": "line",
     "line_id": 18122,
