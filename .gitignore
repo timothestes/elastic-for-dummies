@@ -1,1 +1,4 @@
 result.json
+elasticsearch-*
+.env
+.DS_Store
