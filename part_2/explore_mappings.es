@@ -75,6 +75,8 @@ PUT hello_world/_settings
     }
 }
 
+
+
 PUT hello_world/_doc/2
 {
     "type":"line",
@@ -84,4 +86,18 @@ PUT hello_world/_doc/2
     "line_number":"5.1.29",
     "speaker":"TOUCHSTONE",
     "text_entry":"knows himself to be a fool. The heathen"
+}
+
+GET hello_world/_doc/2
+
+
+GET hello_world/_search
+{
+    "query": {
+        "range": {
+            "@timestamp": {
+                "gte": "now-1h"
+            }
+        }
+    }
 }
